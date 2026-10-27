@@ -1,23 +1,32 @@
-# From 4G to 6G — Python dashboard
+# From 4G to 6G – Python Dashboard
 
-A calm, low-colour interactive website built with **Python + Streamlit**. No JavaScript knowledge is needed to customize the dashboard.
+This project is an interactive dashboard for analyzing and comparing 5G and 6G network performance using Python and Streamlit.
 
-## Files
-- `5G_6G_analysis.ipynb` — your original Jupyter notebook; the main research source.
-- `app.py` — the website/dashboard code.
-- `requirements.txt` — Python packages used by the dashboard.
+It presents network metrics, city-tier comparisons, peak-hour analysis, and latency thresholds through simple charts and visualizations.
 
-## Run it in VS Code
+## Features
+- 5G and 6G performance comparison
+- Network latency and throughput analysis
+- City-tier and peak-hour comparisons
+- Interactive charts and metrics
+- Simple, minimal user interface
 
-1. Install Python 3.10 or newer and VS Code's Python extension.
-2. Extract the project ZIP and open the `5g6g-python-dashboard` folder in VS Code.
-3. Open the VS Code terminal (**Terminal → New Terminal**).
-4. Create a virtual environment:
-   - Windows: `python -m venv .venv` then `.venv\\Scripts\\activate`
-   - macOS/Linux: `python3 -m venv .venv` then `source .venv/bin/activate`
-5. Install dependencies: `python -m pip install -r requirements.txt`
-6. Start the website: `python -m streamlit run app.py`
-7. Your browser will open a local page, usually `http://localhost:8501`. Keep the terminal open while using it.
+## Technologies Used
+- Python
+- Streamlit
+- Pandas
+- Plotly
+- Jupyter Notebook
 
-## Data note
-The dashboard's KPI, city-tier, peak-hour, and latency-threshold tables reproduce summary values visible in the notebook's saved outputs. The notebook describes its dataset as synthetic, 6G as simulated, and latency thresholds as assumptions. This dashboard does **not** connect to a live telecom network. If you later provide `5G_6G_network_dataset.csv`, the dashboard can be upgraded to calculate all charts directly from that full dataset instead of summary values.
+## How to Run
+
+1. Clone this repository.
+2. Install the required packages:
+
+   `pip install -r requirements.txt`
+
+3. Run the dashboard:
+
+   `streamlit run app.py`
+
+<img width="840" height="1860" alt="Analysis output 1" src="https://github.com/user-attachments/assets/3a99c7e8-9e04-4ecd-836f-c71a0aec28b4" />
